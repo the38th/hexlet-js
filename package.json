@@ -19,5 +19,8 @@
   "homepage": "https://github.com/the38th/hexlet-js#readme",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0"
   }
 }
