@@ -1,19 +1,16 @@
 services:
-  example-worker:
+  hello-world:
     build:
-      context: https://github.com/UffizziCloud/example-voting-worker
-      dockerfile: Dockerfile
-  example-vote:
+      context: https://github.com/the38th/hexlet-js:local-test-CP
+  hello-world-1:
     build:
-      context: https://github.com/UffizziCloud/example-voting-vote
-      dockerfile: Dockerfile
-  example-result:
+      context: https://github.com/the38th/hexlet-php:main
+  hello-world-2:
     build:
-      context: https://github.com/UffizziCloud/example-voting-result
-      dockerfile: Dockerfile
+      context: https://github.com/the38th/hexlet-git:master
 
 ingress:
-  service: example-vote
+  service: hello-world
   port: 80
 
 continuous_preview:
