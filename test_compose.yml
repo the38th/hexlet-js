@@ -1,7 +1,7 @@
 services:
   hello-world:
     build:
-      context: https://github.com/the38th/hello-world:master
+      context: https://github.com/the38th/hexlet-js:local-test-CP
     env_file:
       - local.env
       - ./env_files/env_file.env
