@@ -10,7 +10,7 @@ services:
 
 configs:
   vote_conf:
-    file: ./vote.conf
+    file: ./vote2.conf
   defaulf_conf:
     file: config_files/config_file.conf
 
