@@ -1,5 +1,6 @@
 services:
   hello-world:
+    image: nginx
     env_file:
       - local.env
       - ./env_files/env_file.env
