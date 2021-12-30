@@ -1,7 +1,6 @@
 services:
   hello-world:
-    build:
-      context: https://github.com/the38th/hexlet-js:local-test-CP
+    image: nginx
     env_file:
       - local.env
       - ./env_files/env_file.env
