@@ -1,8 +1,8 @@
 x-uffizzi:
-  services:
-    nginx:
-      image: nginx:latest
-
   ingress:
     service: nginx
     port: 80
+
+services:
+  nginx:
+    image: nginx:latest
