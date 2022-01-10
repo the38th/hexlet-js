@@ -1,4 +1,4 @@
-ingress:
+x-uffizzi-ingress:
   service: nginx
   port: 80
 
