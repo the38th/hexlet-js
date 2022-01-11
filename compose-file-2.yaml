@@ -1,0 +1,20 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/the38th/hexlet-js:local-test-CP
+  hello-world-1:
+    build:
+      context: https://github.com/the38th/hexlet-php:main
+  hello-world-2:
+    build:
+      context: https://github.com/the38th/hexlet-git:master
+
+ingress:
+  service: hello-world
+  port: 80
+
+continuous_preview:
+  deploy_preview_when_pull_request_is_opened: true
+  delete_preview_when_pull_request_is_closed: true
+  delete_preview_after: 10h
+  share_to_github: true
