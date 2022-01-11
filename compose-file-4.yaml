@@ -1,7 +1,6 @@
-x-uffizzi:
-  ingress:
-    service: nginx
-    port: 80
+x-uffizzi-ingress:
+  service: nginx
+  port: 80
 
 services:
   nginx:
