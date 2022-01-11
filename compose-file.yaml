@@ -10,5 +10,5 @@ ingress:
 continuous_preview:
   deploy_preview_when_pull_request_is_opened: true
   delete_preview_when_pull_request_is_closed: true
-  delete_preview_after: 10h
+  delete_preview_after: 12h
   share_to_github: true
