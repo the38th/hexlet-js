@@ -1,1 +1,11 @@
+ingress:
+  service: nginx
+  port: 80
 
+services:
+  nginx:
+    image: nginx:latest
+    continuous_previews:
+      deploy_preview_when_pull_request_is_opened: true
+      delete_preview_when_pull_request_is_closed: true
+      delete_preview_after: 24h
