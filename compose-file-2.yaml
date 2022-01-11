@@ -1,13 +1,7 @@
 services:
   hello-world:
     build:
-      context: https://github.com/the38th/hexlet-js:local-test-CP
-  hello-world-1:
-    build:
       context: https://github.com/the38th/hexlet-php:main
-  hello-world-2:
-    build:
-      context: https://github.com/the38th/hexlet-git:master
 
 ingress:
   service: hello-world
