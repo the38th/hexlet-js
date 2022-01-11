@@ -1,5 +1,5 @@
 ingress:
-  service: nginx
+  service: redis
   port: 80
 
 services:
