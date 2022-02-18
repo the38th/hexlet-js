@@ -6,4 +6,4 @@ services:
   nginx:
     image: nginx:latest
   redis:
-    redis: nginx:latest
+    image: redis:latest
