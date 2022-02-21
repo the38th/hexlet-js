@@ -2,7 +2,7 @@ x-uffizzi-ingress:
   service: nginx
   port: 80
 
-services:
+1services:
   nginx:
     image: nginx:latest
   redis:
