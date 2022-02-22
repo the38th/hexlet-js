@@ -1,4 +1,4 @@
-1services:
+services:
   nginx:
     image: nginx:latest
   redis:
