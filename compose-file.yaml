@@ -1,11 +1,18 @@
-ingress:
-  service: nginx
-  port: 80
-
 services:
-  nginx:
-    image: nginx:latest
-    continuous_previews:
-      deploy_preview_when_pull_request_is_opened: true
-      delete_preview_when_pull_request_is_closed: true
-      delete_preview_after: 24h
+  webhooks-test-app:
+    image: uffizzitest/webhooks-test-app:uffizzi_request_feature_1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+x-uffizzi-ingress:
+  service: webhooks-test-app
+  port: 80000000
+
+x-uffizzi-continuous-preview:
+  share_to_github: true
+  delete_preview_after: 99h
+  tag_pattern: uffizzi_request_*
+  delete_preview_when_image_tag_is_updated: true
+  deploy_preview_when_image_tag_is_created: true
+  delete_preview_when_pull_request_is_closed: true
