@@ -4,6 +4,11 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+  postgres:
+    image: postgres:9.6
+    secrets:
+      - pg_user
+      - pg_password
 
 x-uffizzi-ingress:
   service: webhooks-test-app
