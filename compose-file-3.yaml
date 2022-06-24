@@ -16,7 +16,7 @@ services:
 
   worker:
     build:
-      context: https://github.com/ACCOUNT/example-voting-worker
+      context: https://github.com/UffizziCloud/example-voting-worker
       dockerfile: Dockerfile
     deploy:
       resources:
@@ -25,12 +25,12 @@ services:
 
   vote:
     build:
-      context: https://github.com/ACCOUNT/example-voting-vote
+      context: https://github.com/UffizziCloud/example-voting-vote
       dockerfile: Dockerfile
 
   result:
     build:
-      context: https://github.com/ACCOUNT/example-voting-result
+      context: https://github.com/UffizziCloud/example-voting-result
       dockerfile: Dockerfile
 
 configs:
