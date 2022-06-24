@@ -4,7 +4,7 @@ services:
 
 x-uffizzi-ingress:
   service: webhooks-test-app
-  port: 8080
+  port: 80
 
 x-uffizzi-continuous-preview:
   share_to_github: true
