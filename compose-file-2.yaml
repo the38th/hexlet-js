@@ -1,6 +1,6 @@
 services:
   webhooks-test-app:
-    context: .
+    build: .
 
 x-uffizzi-ingress:
   service: webhooks-test-app
