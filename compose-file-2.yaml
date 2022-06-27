@@ -1,6 +1,12 @@
 services:
   webhooks-test-app:
     build: .
+  redis:
+    image: redis
+  ubuntu:
+    image: ubuntu
+  postgres:
+    image: postgres
 
 x-uffizzi-ingress:
   service: webhooks-test-app
