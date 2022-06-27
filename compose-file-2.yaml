@@ -3,8 +3,8 @@ services:
     build: .
   redis:
     image: redis
-  ubuntu:
-    image: ubuntu
+  apline:
+    image: apline
   postgres:
     image: postgres
 
