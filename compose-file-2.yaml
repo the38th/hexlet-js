@@ -3,8 +3,6 @@ services:
     build: .
   redis:
     image: redis
-  alpine:
-    image: alpine
   postgres:
     image: postgres
 
