@@ -1,6 +1,6 @@
 services:
   webhooks-test-app:
-    image: nginx
+    context: .
 
 x-uffizzi-ingress:
   service: webhooks-test-app
