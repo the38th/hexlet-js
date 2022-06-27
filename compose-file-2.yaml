@@ -3,8 +3,6 @@ services:
     build: .
   redis:
     image: redis
-  postgres:
-    image: postgres
 
 x-uffizzi-ingress:
   service: webhooks-test-app
